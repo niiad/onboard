@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.0"
+constraintlayoutComposeVersion = "1.0.1"
 constraintlayoutVersion = "2.1.4"
 dotsindicatorVersion = "5.0"
 kotlin = "1.9.0"
@@ -14,6 +15,7 @@ navigationFragmentKtx = "2.7.7"
 viewpager2Version = "1.1.0-beta02"
 
 [libraries]
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutComposeVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }

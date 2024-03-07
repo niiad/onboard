@@ -60,7 +60,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.constraintlayout)
-    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.constraintlayout.compose)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.viewpager2)
     implementation(libs.tbuonomo.dotsindicator)
