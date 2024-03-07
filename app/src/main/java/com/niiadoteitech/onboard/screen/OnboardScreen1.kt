@@ -10,11 +10,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
+
+import com.niiadoteitech.onboard.R
 
 @Composable
 fun OnboardScreen1() {
@@ -95,6 +99,28 @@ fun OnboardScreen1Item(
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.bodyLarge,
             color = Color.Blue
+        )
+    }
+}
+
+@Preview
+@Composable
+fun OnBoardScreen1ItemPreview() {
+    val title = "Create an account"
+    val subTitle = "Connect with people around the world"
+    val description = "Users will be able to give you live, chat and meet people nearby"
+    val image = painterResource(id = R.drawable.ob1_1)
+
+    ConstraintLayout(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color.White)
+    ) {
+        OnboardScreen1Item(
+            title = title,
+            subTitle = subTitle,
+            description = description,
+            image = image
         )
     }
 }
